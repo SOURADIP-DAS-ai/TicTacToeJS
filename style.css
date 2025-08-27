@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #548687;
+}
+
+#heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.Container {
+    height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;           
+}
+
+.Game{
+    height:60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 1.5vmin;
+}
+
+.Box{
+    height: 18vmin;
+     width: 18vmin;
+     border-radius: 1rem;
+     border: none;
+     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+     font-size: 8vmin;
+     background-color: aqua;
+}
+
+.ResetBtnContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#GameResetBtn {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+/* Popup container */
+.popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide when not active */
+.hidden {
+    display: none;
+}
+
+/* Popup inner content */
+.popup-content {
+    background: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 320px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Message text */
+#popup-message {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* OK button */
+#popup-close {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #191913;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#popup-close:hover {
+    background-color: #333;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.Scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    background-color: #26667F;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    max-width: 400px;
+    margin-inline: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.Score {
+    display: flex;
+    gap: 0.4rem;
+    font-weight: 600;
+}
+
+
+/* Intro popup styling */
+.intro-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #26667F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.intro-popup-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.intro-popup-content input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.intro-popup-content button {
+    background-color: #26667F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Blue dot under active player */
+.dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 55);
+    margin-left: 5px;
+    visibility: hidden;
+}
+
+
+

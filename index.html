@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <p id="popup-message"></p>
+            <button id="popup-close">OK</button>
+        </div>
+    </div>
+
+   <main>
+       <h1 id="heading">Tic-Tac-Toe</h1>
+       <!-- Intro Popup -->
+        <div id="intro-popup" class="intro-popup">
+            <div class="intro-popup-content">
+                <h2>Welcome to Tic-Tac-Toe!</h2>
+                <label for="playerXName">Player X Name:</label>
+                <input type="text" id="playerXName" placeholder="Enter name for Player X">
+                <br>
+                <label for="playerOName">Player O Name:</label>
+                <input type="text" id="playerOName" placeholder="Enter name for Player O">
+                <button id="startGameBtn">Start Game</button>
+
+                  <!-- Error message container -->
+                <p id="nameErrorMsg" style="display:none; margin-top: 10px; font-weight: bold; color: red;"></p>
+            </div>
+        </div>
+
+      <div class="Scoreboard">
+            <div class="Score">
+                <span id="playerXDisplay">Player X</span><span class="dot" id="dotX"></span>: <span id="scoreX">0</span>
+            </div>
+            <div class="Score">
+                <span id="playerODisplay">Player O</span><span class="dot" id="dotO"></span>: <span id="scoreO">0</span>
+            </div>
+            <div class="Score">
+                <span>Draws: </span><span id="scoreDraw">0</span>
+            </div>
+       </div>
+
+        
+       <div class="Container">
+                <div class="Game">
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                    <button class="Box"></button>
+                </div>
+                
+       </div>
+       <br>
+        <div class="ResetBtnContainer">
+              <button id="GameResetBtn">Reset game</button>
+        </div>
+   </main>
+  
+</body>
+   <script  src="Action.js"></script>
+</html>
