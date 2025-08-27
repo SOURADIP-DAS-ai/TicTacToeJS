@@ -354,3 +354,41 @@ popupClose.addEventListener("click", () => {
     popup.classList.add("hidden");
     document.body.classList.remove("popup-active");
 });
+
+  document.getElementById('GameInfo').addEventListener('click', () => {
+    window.location.href = 'GameInfo.html'; // update filename here
+  });
+
+
+// window.addEventListener('pageshow', (event) => {
+//   const introPopup = document.getElementById('intro-popup');
+//   const hasVisited = sessionStorage.getItem('hasVisited');
+
+//   if (event.persisted) {
+//     // Page loaded from back/forward cache
+//     if (hasVisited) {
+//       introPopup.style.display = 'none';
+//     } else {
+//       introPopup.style.display = 'block';
+//     }
+//   } else {
+//     // Normal load or refresh — always show popup
+//     introPopup.style.display = 'block';
+//     sessionStorage.removeItem('hasVisited'); // reset flag so popup shows on refresh
+//   }
+// });
+
+// document.getElementById('startGameBtn').addEventListener('click', () => {
+//   const playerX = document.getElementById('playerXName').value.trim();
+//   const playerO = document.getElementById('playerOName').value.trim();
+//   const errorMsg = document.getElementById('nameErrorMsg');
+
+//   if (!playerX || !playerO) {
+//     errorMsg.style.display = 'block';
+//     errorMsg.textContent = 'Please enter names for both players.';
+//     return;
+//   }
+
+//   document.getElementById('intro-popup').style.display = 'none';
+//   sessionStorage.setItem('hasVisited', 'true');
+// });

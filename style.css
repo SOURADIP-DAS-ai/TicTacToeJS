@@ -45,9 +45,10 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+     gap: 20px; /* space between buttons */
 }
 
-#GameResetBtn {
+#GameResetBtn,#GameInfo {
     padding: 1rem;
     font-size: 1.2rem;
     background-color: #191913;
